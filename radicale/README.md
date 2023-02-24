@@ -1,5 +1,7 @@
 # Home Assistant Add-on: Radicale add-on
 
+Once installed, simply select if you want to use SSL and tweak the default port Radicale will be listening on.
+
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports armhf Architecture][armhf-shield]
