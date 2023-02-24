@@ -1,0 +1,11 @@
+[auth]
+type = radicale_homeassistant_password_auth
+
+[server]
+hosts = 0.0.0.0:5232
+
+[storage]
+filesystem_folder = /data/radicale/collections
+
+[rights]
+type = owner_only

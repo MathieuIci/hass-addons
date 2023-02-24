@@ -1,0 +1,20 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Radicale addon
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+
+declare -a arguments
+
+bashio::config.require.ssl
+
+if bashio::config.true "ssl"; then
+    arguments+=("--server-ssl true")
+    arguments+=("--server-certificate /ssl/$(bashio::config 'certfile')")
+    arguments+=("--server-key /ssl/$(bashio::config 'keyfile')")
+fi
+
+bashio::log.info "Starting Radicale (${arguments[@]})"
+exec radicale --config /etc/radicale/config ${arguments[@]}
+
+# "${VARIABLE:-default}"
