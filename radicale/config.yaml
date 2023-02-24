@@ -1,6 +1,6 @@
 name: "Radicale"
 description: "Radicale CardDAV and CalDAV server"
-version: "0.0.50"
+version: "0.0.51"
 slug: "radicale"
 startup: "application"
 init: false
