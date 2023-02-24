@@ -2,6 +2,8 @@
 
 Once installed, simply select if you want to use SSL and tweak the default port Radicale will be listening on.
 
+Radicale will authenticate against Home Assistant's users.
+
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports armhf Architecture][armhf-shield]
