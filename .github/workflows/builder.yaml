@@ -61,7 +61,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
         contents: read
-        metadata: read
         packages: write
 
     if: needs.init.outputs.changed == 'true'
