@@ -29,7 +29,7 @@ schema:
   keyfile: str
 panel_icon: "mdi:calendar-sync"
 webui: "[PROTO:ssl]://[HOST]:[PORT:5232]"
-watchdog: [PROTO:ssl]://[HOST]:[PORT:5232]
+watchdog: "[PROTO:ssl]://[HOST]:[PORT:5232]"
 image: "ghcr.io/mathieuici/{arch}-addon-radicale"
 
 # Ingress will not work with Radicale as it is not built for it
