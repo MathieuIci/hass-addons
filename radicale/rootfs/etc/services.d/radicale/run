@@ -2,6 +2,7 @@
 # ==============================================================================
 # Radicale addon
 # s6-overlay docs: https://github.com/just-containers/s6-overlay
+# BashIO commands: https://github.com/hassio-addons/bashio/tree/main/lib
 # ==============================================================================
 
 declare -a arguments

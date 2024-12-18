@@ -2,7 +2,7 @@
 
 name: "Radicale"
 description: "Radicale CardDAV and CalDAV server"
-version: "0.0.55"
+version: "0.0.57c"
 slug: "radicale"
 init: false
 backup: cold
