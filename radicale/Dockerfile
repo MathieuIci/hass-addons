@@ -31,3 +31,7 @@ RUN apk add --no-cache --virtual=build-dependencies \
     && python3 -m pip install radicale passlib[bcrypt] \
     && python3 -m pip install /usr/local/lib/python/radicale_homeassistant_password_auth/ \
     && apk del --purge build-dependencies
+
+#TODO Find a way to use the config's value in the below curl command
+#HEALTHCHECK --interval=120s --timeout=10s --start-period=5s --retries=3 \
+#    CMD curl --fail https://localhost:5232 || exit 1
