@@ -32,4 +32,4 @@ RUN apk add --no-cache --virtual=build-dependencies \
     && python3 -m pip install /usr/local/lib/python/radicale_homeassistant_password_auth/ \
     && apk del --purge build-dependencies
 
-HEALTHCHECK --interval=120s --timeout=10s --start-period=15s --retries=3 CMD /etc/radicale/healthcheck.sh
+HEALTHCHECK --interval=120s --timeout=10s --start-period=15s --retries=3 CMD /usr/local/bin/radicale-healthcheck.sh
