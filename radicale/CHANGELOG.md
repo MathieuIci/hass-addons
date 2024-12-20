@@ -1,6 +1,6 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
-## 0.0.62
+## 0.0.63
 - Force Radicale version to have control over future updates
 
 ## 0.0.61
