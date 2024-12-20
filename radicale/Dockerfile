@@ -28,7 +28,7 @@ RUN apk add --no-cache --virtual=build-dependencies \
         py3-wheel \
         py3-bcrypt \
     && python3 -m pip install --upgrade pip \
-    && python3 -m pip install radicale passlib[bcrypt] \
+    && python3 -m pip install radicale==3.3.2 passlib[bcrypt] \
     && python3 -m pip install /usr/local/lib/python/radicale_homeassistant_password_auth/ \
     && apk del --purge build-dependencies
 
